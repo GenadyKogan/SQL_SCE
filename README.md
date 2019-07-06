@@ -1,2 +1,2 @@
 # SQL_Projects
-Will be add soon
+Will be added soon
