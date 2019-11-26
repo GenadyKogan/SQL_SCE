@@ -4,7 +4,7 @@ SELECT ordid, orderdate
 FROM ord
 WHERE custid = (SElECT custid
                     FROM customer
-                    WHERE name = 'vollyrite');
+                    WHERE name = 'VOLLYRITE');
 rem 2
 SELECT name FROM customer WHERE customer.custid in
 	(SELECT custid FROM ord WHERE ord.ordid in
