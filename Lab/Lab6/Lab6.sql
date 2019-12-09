@@ -1,19 +1,11 @@
 rem 1
-SELECT DISTINCT maker
-FROM product
-WHERE type='PC'AND EXISTS(SELECT *
-                                FROM pc, product pr1
-                                WHERE speed<1200 AND
-                                pc.model = pr1.model AND
-                                pc.model = pr1.model);
-
-/*SELECT distinct maker
+SELECT distinct maker
 FROM product pr 
 WHERE type='PC' AND NOT EXISTS (SELECT *  
                                 FROM pc, product pr1
                                 WHERE speed < 1200 AND 
                                 pr1.model = pc.model 
-                                AND pr.maker=pr1.maker); */
+                                AND pr.maker=pr1.maker);
  
 rem 2
 SELECT model,price
